@@ -1,0 +1,31 @@
+# MDS301 Lab 02 — Building and Training Neural Networks
+# Python 3.12
+#
+# Versions below are the ones the recorded results were produced with.
+# Minor version differences do not affect the pipeline.
+
+# --- Core scientific stack ---
+numpy==2.5.1
+pandas==3.0.3
+scipy==1.18.1
+matplotlib==3.11.0
+
+# --- Machine learning ---
+scikit-learn==1.9.1
+
+# --- Deep learning ---
+# CPU build (as used for the recorded results). For a GPU machine install the
+# CUDA build instead, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+torch==2.15.0
+torchvision==0.29.1
+
+# --- Data acquisition (CIFAR-10 parquet mirror) ---
+pyarrow==26.0.0
+pillow==12.3.0
+
+# --- Notebook tooling ---
+jupyter>=1.0
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.29

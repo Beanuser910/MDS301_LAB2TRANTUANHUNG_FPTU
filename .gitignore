@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Datasets (reproducible via scripts/fetch_cifar_hf.py)
+data/
+
+# Model weights and training checkpoints (reproducible via scripts/run_part3.py)
+# Kept out of Git because of size; regenerate with the training script.
+outputs/models/*.pt
+
+# Temporary download artefacts
+*.tmp
+data/cifar_parts/
+data/*.tar.gz
+
+# Notebook scratch
+.ipynb_checkpoints/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

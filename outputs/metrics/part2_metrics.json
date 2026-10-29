@@ -1,0 +1,104 @@
+{
+  "2.1": {
+    "shape": [
+      569,
+      30
+    ],
+    "feature_names": [
+      "mean radius",
+      "mean texture",
+      "mean perimeter",
+      "mean area",
+      "mean smoothness",
+      "mean compactness",
+      "mean concavity",
+      "mean concave points",
+      "mean symmetry",
+      "mean fractal dimension",
+      "radius error",
+      "texture error",
+      "perimeter error",
+      "area error",
+      "smoothness error",
+      "compactness error",
+      "concavity error",
+      "concave points error",
+      "symmetry error",
+      "fractal dimension error",
+      "worst radius",
+      "worst texture",
+      "worst perimeter",
+      "worst area",
+      "worst smoothness",
+      "worst compactness",
+      "worst concavity",
+      "worst concave points",
+      "worst symmetry",
+      "worst fractal dimension"
+    ],
+    "target_names": [
+      "malignant",
+      "benign"
+    ],
+    "class_counts": {
+      "0": 212,
+      "1": 357
+    },
+    "missing_total": 0,
+    "train_shape": [
+      455,
+      30
+    ],
+    "test_shape": [
+      114,
+      30
+    ]
+  },
+  "2.2": {
+    "accuracy": 0.9649122807017544,
+    "precision_malignant": 0.9318181818181818,
+    "recall_malignant": 0.9761904761904762,
+    "f1_weighted": 0.9650731808230041,
+    "n_iter": 164,
+    "final_loss": 0.004520930761220754,
+    "train_time_s": 0.31,
+    "report": "              precision    recall  f1-score   support\n\n   malignant       0.93      0.98      0.95        42\n      benign       0.99      0.96      0.97        72\n\n    accuracy                           0.96       114\n   macro avg       0.96      0.97      0.96       114\nweighted avg       0.97      0.96      0.97       114\n"
+  },
+  "2.3": {
+    "sgd": {
+      "test_accuracy": 0.9736842105263158,
+      "train_time_s": 0.46,
+      "n_iter": 244,
+      "final_loss": 0.010853079774520382,
+      "has_native_curve": true
+    },
+    "adam": {
+      "test_accuracy": 0.9649122807017544,
+      "train_time_s": 0.33,
+      "n_iter": 164,
+      "final_loss": 0.004520930761220754,
+      "has_native_curve": true
+    },
+    "lbfgs": {
+      "test_accuracy": 0.9736842105263158,
+      "train_time_s": 0.05,
+      "n_iter": 17,
+      "final_loss": 8.218712172192787e-05,
+      "has_native_curve": false
+    }
+  },
+  "2.4": {
+    "no_early_stopping": {
+      "test_accuracy": 0.9649122807017544,
+      "n_iter": 164,
+      "train_time_s": 0.38
+    },
+    "early_stopping": {
+      "test_accuracy": 0.9473684210526315,
+      "n_iter": 25,
+      "train_time_s": 0.11,
+      "stopped_early": true
+    },
+    "iterations_saved": 139
+  }
+}
