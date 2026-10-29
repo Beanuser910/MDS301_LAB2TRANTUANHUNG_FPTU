@@ -30,7 +30,8 @@ The assignment specification is kept verbatim in **`Lab02_MDS301.md`**.
 │   ├── parse_cnn_log.py           # recovers the CNN history from a run log
 │   ├── smoke_part3.py             # 1-epoch smoke test of the Part 3 pipeline
 │   ├── audit_submission.py        # checks the notebook against the Lab 02 requirements
-│   └── make_submission.py         # writes submission/ only if the audit passes
+│   ├── make_submission.py         # writes submission/ only if the audit passes
+│   └── check_metric_traceability.py  # proves every notebook number comes from the JSON
 ├── outputs/
 │   ├── figures/                   # 12 generated PNGs
 │   ├── metrics/                   # 4 JSON metric files
@@ -158,6 +159,7 @@ extrapolated or assumed.
 | Part 1 reproduces | `scripts/run_part1.py` | identical: RMSE 0.5428 / CV 0.5165 / test 0.5079 |
 | Part 2 reproduces | `scripts/run_part2.py` | identical: acc 0.9649, lbfgs 0.9737, early stop at 25 iters |
 | Part 3 checkpoints intact | `torch.load(outputs/models/ckpt_resnet.pt)` | epoch 30, 30 epochs of history |
+| Every number traceable | `scripts/check_metric_traceability.py` | 17/17 metrics found verbatim in the metrics JSON |
 
 **Before submitting:** the first cell still carries a placeholder for your name
 and student ID — fill that in (the assignment requires both in the first cell).
